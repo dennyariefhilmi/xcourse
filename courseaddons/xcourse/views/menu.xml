@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- This Menu Item will appear in the Upper bar, that's why It needs NO parent or action -->
+    <menuitem 
+        id="xcourse_menu_root"
+        name="XCourse"
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem 
+        id="xcourse_kelas_categ"
+        name="Kelas"
+        parent="course_menu_root"
+        sequence="10"/>
+
+    <!-- This Menu Item Must have a parent -->
+    <menuitem id="xcourse_tingkatan_menu_categ"
+              name="Tingkat Level Kelas"
+              parent="course_menu_root"
+              sequence="20"/>
+
+    <menuitem id="xcourse_tutor_menu_categ"
+              name="Tutor"
+              parent="course_menu_root"
+              sequence="30"/>
+
+    <menuitem id="xcourse_session"
+              name="Peserta"
+              parent="course_menu_root"
+              sequence="40"/>
+
+</odoo>

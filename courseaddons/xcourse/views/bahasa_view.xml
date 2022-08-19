@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<odoo>
+
+    <record id="xcourse_bahasa_view_tree" model="ir.ui.view">
+       <field name="name">Kursus Bahasa</field>
+       <field name="model">xcourse.bahasa</field>
+       <field name="arch" type="xml">
+           <tree string="xcourse_bahasa_tree">
+               <field name="name"/>
+               <field name="tingkatan"/>
+               <field name="biaya"/>
+               <field name="kapasitas_kelas"/>
+               <field name="kapasitas_sisa"/>
+           </tree>
+       </field>
+   </record>
+
+    <record id="xcourse_bahasa_view_form" model="ir.ui.view">
+       <field name="name">Kursus Bahasa</field>
+       <field name="model">xcourse.bahasa</field>
+       <field name="arch" type="xml">
+           <form string="xcourse_bahasa_form">
+               <sheet>
+                   <group>
+                       <field name="name"/>
+                       <field name="tingkatan"/>
+                       <field name="biaya"/>
+                       <field name="kapasitas_kelas"/>
+                       <field name="kapasitas_sisa"/>
+                   </group>
+               </sheet>
+           </form>
+       </field>
+   </record>
+
+    <record id="xcourse_bahasa_action" model="ir.actions.act_window">
+        <field name="name">Bahasa</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xcourse.bahasa</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="xcourse_bahasa_categ"
+              name="Bahasa"
+              parent="xcourse_kelas_categ"
+              action="xcourse_bahasa_action"
+              sequence="20"/>
+
+</odoo>

@@ -1,0 +1,13 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_xcourse_tingkatan,access.xcourse.tingkatan,model_xcourse_tingkatan,,1,1,1,1
+access_xcourse_category,access.xcourse.category,model_xcourse_category,,1,1,1,1
+access_xcourse_pemrograman,access.xcourse.pemrograman,model_xcourse_pemrograman,,1,1,1,1
+access_xcourse_bahasa,access.xcourse.bahasa,model_xcourse_bahasa,,1,1,1,1
+access_xcourse_keterampilan,access.xcourse.keterampilan,model_xcourse_keterampilan,,1,1,1,1
+access_xcourse_session,access.xcourse.session,model_xcourse_session,,1,1,1,1
+access_xcourse_pesertapemrograman,access.xcourse.pesertapemrograman,model_xcourse_pesertapemrograman,,1,1,1,1
+access_xcourse_pesertabahasa,access.xcourse.pesertabahasa,model_xcourse_pesertabahasa,,1,1,1,1
+access_xcourse_pesertaketerampilan,access.xcourse.pesertaketerampilan,model_xcourse_pesertaketerampilan,,1,1,1,1
+access_xcourse_sessionbahasa,access.xcourse.sessionbahasa,model_xcourse_sessionbahasa,,1,1,1,1
+access_xcourse_sessionketerampilan,access.xcourse.sessionketerampilan,model_xcourse_sessionketerampilan,,1,1,1,1

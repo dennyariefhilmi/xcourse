@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <record id="xcourse_tingkatan_view_tree" model="ir.ui.view">
+        <field name="name">Tingkatan Kursus</field>
+        <field name="model">xcourse.tingkatan</field>
+        <field name="arch" type="xml">
+            <tree string="xcourse_tingkatan_tree">
+                <field name="name"/>
+                <field name="keterangan"/>
+                <field name="biaya"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="xcourse_tingkatan_view_form" model="ir.ui.view">
+        <field name="name">Level Kursus</field>
+        <field name="model">xcourse.tingkatan</field>
+        <field name="arch" type="xml">
+            <form string="xcourse_tingkatan_form">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                    </group>
+                    <group>
+                        <field name="keterangan"/>
+                        <field name="biaya"/>
+                        <field name="tingkat_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="xcourse_tingkatan_view_action" model="ir.actions.act_window">
+        <field name="name">Level</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xcourse.tingkatan</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <menuitem id="xcourse_tingkatan_view_menu_action"
+              name="Level"
+              parent="xcourse_menu_root"
+              action="xcourse_tingkatan_view_action"
+              sequence="20"/>
+</odoo>

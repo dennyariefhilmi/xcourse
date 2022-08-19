@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="xcourse_category_view_tree" model="ir.ui.view">
+       <field name="name">Course Category</field>
+       <field name="model">xcourse.pemrograman</field>
+       <field name="arch" type="xml">
+           <tree string="_tree">
+               <field name="name"/>
+               <field name="tingkatan"/>
+               <field name="biaya"/>
+               <field name="kapasitas_kelas"/>
+               <field name="jml_siswa_prog"/>
+               <field name="kapasitas_sisa"/>
+           </tree>
+       </field>
+   </record>
+
+
+    <record id="xcourse_category_view_form" model="ir.ui.view">
+       <field name="name">Course Category</field>
+       <field name="model">xcourse.pemrograman</field>
+       <field name="arch" type="xml">
+           <form string="xcourse_category_form">
+               <sheet>
+                   <group>
+                       <field name="name"/>
+                       <field name="tingkatan"/>
+                       <field name="kapasitas_kelas"/>
+                   </group>
+               </sheet>
+           </form>
+       </field>
+   </record>
+
+    <record id="xcourse_category_action" model="ir.actions.act_window">
+        <field name="name">Pemrograman</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">xcourse.pemrograman</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="xcourse_category_menu_action"
+              name="Pemrograman"
+              parent="xcourse_kelas_categ"
+              action="xcourse_category_action"
+              sequence="10"/>
+</odoo>
